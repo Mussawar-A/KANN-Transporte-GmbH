@@ -1,0 +1,228 @@
+/* ------------------------------
+   Navigation Styles
+   ------------------------------ */
+   header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* position: sticky; */ /* Uncomment if you want sticky navigation */
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  #logo {
+    display: block;
+  }
+  
+  #logo img {
+    max-height: 60px;
+    width: auto;
+  }
+  
+  /* Main Navigation */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  #main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #main-menu li {
+    margin: 0 3px;
+  }
+  
+  #main-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  #main-menu a:hover,
+  #main-menu a[aria-current="page"] {
+    color: var(--secondary-color);
+  }
+  
+  #main-menu a[aria-current="page"]:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 3px;
+    background: var(--secondary-color);
+  }
+  
+  /* Mobile Menu Toggle */
+  #mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+  }
+  
+  #mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+  }
+  
+  /* Responsive Navigation */
+  @media (max-width: 991px) {
+    #mobile-menu-toggle {
+      display: block;
+    }
+  
+    #main-menu {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100vh;
+      background-color: #fff;
+      flex-direction: column;
+      padding: 80px 20px 30px;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+  
+    #main-menu.active {
+      right: 0;
+    }
+  
+    #main-menu li {
+      margin: 0;
+      width: 100%;
+    }
+  
+    #main-menu a {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+  
+    #main-menu a[aria-current="page"]:after {
+      display: none;
+    }
+  
+    /* Hamburger to X animation */
+    #mobile-menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+  
+    #mobile-menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #mobile-menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+  }
+  
+  /* ------------------------------
+     Footer Styles
+     ------------------------------ */
+  footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 60px 0 20px;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  /* Footer layout responsive adjustments */
+  @media (min-width: 576px) {
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .footer-content {
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+    }
+  }
+  
+  /* Footer sections */
+  .footer-brand p {
+    margin-top: 15px;
+    opacity: 0.8;
+  }
+  
+  .footer-logo {
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    max-width: 160px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer-logo:hover {
+    opacity: 1;
+  }
+  
+  .footer-links h4, 
+  .footer-contact h4 {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer links */
+  .footer-links a,
+  .footer-contact a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .footer-links a:hover,
+  .footer-contact a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .footer-contact p {
+    margin-bottom: 20px;
+  }
+  
+  /* Copyright section */
+  .copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }

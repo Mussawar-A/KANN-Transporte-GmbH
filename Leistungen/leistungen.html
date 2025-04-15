@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Leistungen – KANN Transport</title>
+    <link rel="stylesheet" href="../Styles/leistungen.css">
+    <link rel="stylesheet" href="../Styles/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with modern navigation -->
+    <header>
+        <div class="container">
+            <a href="../index.html" id="logo">
+                <img src="../images/Kann logo 2.webp" alt="KANN Transport GmbH Logo">
+            </a>
+            
+            <button id="mobile-menu-toggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="../Unternehmen/unternehmen.html">Unternehmen</a></li>
+                    <li><a href="leistungen.html" aria-current="page">Leistungen</a></li>
+                    <li><a href="../Fuhrpark/fuhrpark.html">Fuhrpark</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+            <h1>Unsere Leistungen</h1>
+            <p class="lead">Professionelle Transportlösungen für jeden Bedarf</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Services Section -->
+        <section class="services-detail">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Was wir anbieten</h2>
+                    <p>Entdecken Sie unser umfangreiches Leistungsportfolio für alle Ihre Transportbedürfnisse</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../images/icon-national.svg" alt="Nationale Transporte">
+                        </div>
+                        <div class="service-content">
+                            <h3>Nationale Transporte</h3>
+                            <p>Schnelle und zuverlässige Lieferungen innerhalb Deutschlands. Unser Netzwerk ermöglicht pünktliche Lieferungen an jeden Ort.</p>
+                            <ul class="service-features">
+                                <li>Termingenaue Lieferung</li>
+                                <li>Flächendeckendes Netzwerk</li>
+                                <li>Express-Optionen verfügbar</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../images/icon-international.svg" alt="Internationale Transporte">
+                        </div>
+                        <div class="service-content">
+                            <h3>Internationale Transporte</h3>
+                            <p>Wir transportieren Ihre Güter sicher in ganz Europa und weltweit. Mit unseren zuverlässigen Partnern garantieren wir eine reibungslose Abwicklung.</p>
+                            <ul class="service-features">
+                                <li>Europaweites Netzwerk</li>
+                                <li>Zollabwicklung inklusive</li>
+                                <li>Tracking in Echtzeit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="../images/icon-special.svg" alt="Spezialtransporte">
+                        </div>
+                        <div class="service-content">
+                            <h3>Spezialtransporte</h3>
+                            <p>Maßgeschneiderte Lösungen für Schwertransporte, Gefahrgut und temperaturgeführte Transporte. Unser erfahrenes Team garantiert sichere Lieferungen.</p>
+                            <ul class="service-features">
+                                <li>ADR-zertifizierte Fahrer</li>
+                                <li>Spezielles Equipment</li>
+                                <li>Individuelle Lösungen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ihre Vorteile</h2>
+                    <p>Warum Kunden uns vertrauen</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h3>Zuverlässigkeit</h3>
+                        <p>Pünktlichkeit und Sicherheit haben bei uns höchste Priorität.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <h3>Flexibilität</h3>
+                        <p>Anpassungsfähige Lösungen für jede Transportanforderung.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <h3>Transparenz</h3>
+                        <p>Laufende Updates und vollständige Nachverfolgbarkeit Ihrer Sendungen.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <h3>Nachhaltigkeit</h3>
+                        <p>Umweltfreundliche Transporte mit modernem Fuhrpark.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Kontaktieren Sie uns</h2>
+                <p>Wir freuen uns auf Ihre Nachricht. Füllen Sie das Formular aus, und wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+                
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="kontaktformular" action="/kontakt-verarbeitung" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required aria-required="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">E-Mail:</label>
+                                    <input type="email" id="email" name="email" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefon">Telefon (optional):</label>
+                                <input type="tel" id="telefon" name="telefon">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nachricht">Nachricht:</label>
+                                <textarea id="nachricht" name="nachricht" rows="5" required aria-required="true"></textarea>
+                            </div>
+
+                            <fieldset class="consent-fieldset">
+                                <legend>Datenschutz</legend>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="dsgvo-consent" name="dsgvo-consent" required aria-required="true">
+                                    <label for="dsgvo-consent">Ich stimme zu, dass meine Daten gemäß der <a href="datenschutz.html">Datenschutzerklärung</a> zur Bearbeitung meiner Anfrage verarbeitet werden. Die Daten werden nicht an Dritte weitergegeben und nach Abschluss der Anfrage gelöscht. Diese Einwilligung kann jederzeit widerrufen werden.</label>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit" class="cta-button">Nachricht senden</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Kontaktdaten</h3>
+                        <div class="address-block">
+                            <h4>Anschrift</h4>
+                            <p><strong>KANN Transport GmbH</strong><br>
+                            Musterstraße 123<br>
+                            21000 Hamburg</p>
+                        </div>
+                        <div class="address-block">
+                            <h4>Kontakt</h4>
+                            <p>Telefon: <a href="tel:+49000000000">+49 (0) 00 00000-0</a><br>
+                            E-Mail: <a href="mailto:info@kann-transport.de">info@kann-transport.de</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html">
+                        <img src="../images/Kann logo 2.webp" alt="KANN Transport GmbH Logo" class="footer-logo" width="150" height="60">
+                    </a>
+                    <p>Ihr zuverlässiger Transportpartner in Hamburg und Umgebung.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="../Impressum/impressum.html">Impressum</a></li>
+                        <li><a href="../Datenschutz/datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="../Leistungen/leistungen.html">Unsere Leistungen</a></li>
+                        <li><a href="../Fuhrpark/fuhrpark.html">Fuhrpark</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>Telefon: <a href="tel:+49000000000">+49 (0) 00 00000-0</a></p>
+                    <p>E-Mail: <a href="mailto:info@kann-transport.de">info@kann-transport.de</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 KANN Transport GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-notice">
+        <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer <a href="../Datenschutz/datenschutz.html">Datenschutzerklärung</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="cookie-btn accept">Alle akzeptieren</button>
+            <button id="essential-cookies" class="cookie-btn essential">Nur essenzielle Cookies</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle functionality
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mainMenu = document.getElementById('main-menu');
+            
+            if (mobileMenuToggle && mainMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mainMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

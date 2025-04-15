@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="KANN Transport GmbH - Ihr zuverlässiger Logistikpartner in Hamburg und Umgebung. Maßgeschneiderte Transportlösungen für Ihre Logistikbedürfnisse.">
+    <meta name="keywords" content="Transport, Logistik, Hamburg, Transportlösungen, Spedition, LKW, Lieferung">
+    <title>Unternehmen – KANN Transport GmbH</title>
+    <link rel="canonical" href="https://www.kann-transport.de/Unternehmen/unternehmen.html">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/unternehmen.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/kontakt.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TransportationService",
+      "name": "KANN Transport GmbH",
+      "description": "Zuverlässige Transporte in Hamburg und Umgebung",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hamburg",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49XXXXXXXXX"
+    }
+    </script>
+</head>
+<body>
+    <header id="top">
+        <div class="container">
+            <a id="logo" href="index.html">
+                <img src="../images/Kann logo 2.webp" alt="KANN Transport GmbH Logo" width="200" height="80">
+            </a>
+            <nav>
+                <button id="mobile-menu-toggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="main-menu">
+                    <li><a href="unternehmen.html" aria-current="page">Unternehmen</a></li>
+                    <li><a href="../Leistungen/leistungen.html">Leistungen</a></li>
+                    <li><a href="../Fuhrpark/fuhrpark.html">Fuhrpark</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-detail">
+            <h1>KANN Transporte GmbH – Ihr Partner für zuverlässige Transporte</h1>
+            <article class="about-text">
+                <ul>
+                    <li><strong>Familiengeführtes Unternehmen</strong> mit persönlicher Betreuung</li>
+                    <li><strong>Moderne Flotte:</strong> 15 Lkw – sicher und termingenau</li>
+                    <li><strong>Regionenschwerpunkt:</strong> Hamburg und Umgebung</li>
+                    <li><strong>Maßgeschneiderte Lösungen</strong> für Ihre Logistikbedürfnisse</li>
+                    <li><strong>Langjährige Erfahrung</strong> – flexibel und wirtschaftlich</li>
+                    <li><strong>Effiziente Prozesse</strong> durch engagiertes Team</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="why-detail">
+            <h2>Warum KANN Transporte?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <h3>Pünktlichkeit garantiert</h3>
+                    <p>Dank lokaler Expertise & Flexibilität liefern wir auch in anspruchsvollen Lagen termintreu.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Individuelle Transportkonzepte</h3>
+                    <p>Maßgeschneiderte Lösungen - von Standard bis Spezialtransport.</p>
+                </div>
+                <div class="why-item">
+                    <h3>Kundenorientierung first</h3>
+                    <ul>
+                        <li>Transparente Kommunikation</li>
+                        <li>Schnelle Reaktionszeiten</li>
+                        <li>Verlässliche Qualität</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="cta-text">Lassen Sie uns gemeinsam die besten Lösungen für Ihr Unternehmen finden!</p>
+        </section>
+        
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Kontaktieren Sie uns</h2>
+                <p>Wir freuen uns auf Ihre Nachricht. Füllen Sie das Formular aus, und wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+                
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="kontaktformular" action="/kontakt-verarbeitung" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required aria-required="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">E-Mail:</label>
+                                    <input type="email" id="email" name="email" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefon">Telefon (optional):</label>
+                                <input type="tel" id="telefon" name="telefon">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nachricht">Nachricht:</label>
+                                <textarea id="nachricht" name="nachricht" rows="5" required aria-required="true"></textarea>
+                            </div>
+
+                            <fieldset class="consent-fieldset">
+                                <legend>Datenschutz</legend>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="dsgvo-consent" name="dsgvo-consent" required aria-required="true">
+                                    <label for="dsgvo-consent">Ich stimme zu, dass meine Daten gemäß der <a href="datenschutz.html">Datenschutzerklärung</a> zur Bearbeitung meiner Anfrage verarbeitet werden. Die Daten werden nicht an Dritte weitergegeben und nach Abschluss der Anfrage gelöscht. Diese Einwilligung kann jederzeit widerrufen werden.</label>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit" class="cta-button">Nachricht senden</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Kontaktdaten</h3>
+                        <div class="address-block">
+                            <h4>Anschrift</h4>
+                            <p><strong>KANN Transport GmbH</strong><br>
+                            Musterstraße 123<br>
+                            21000 Hamburg</p>
+                        </div>
+                        <div class="address-block">
+                            <h4>Kontakt</h4>
+                            <p>Telefon: <a href="tel:+49000000000">+49 (0) 00 00000-0</a><br>
+                            E-Mail: <a href="mailto:info@kann-transport.de">info@kann-transport.de</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html">
+                        <img src="../images/Kann logo 2.webp" alt="KANN Transport GmbH Logo" class="footer-logo" width="150" height="60">
+                    </a>
+                    <p>Ihr zuverlässiger Transportpartner in Hamburg und Umgebung.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="../Impressum/impressum.html">Impressum</a></li>
+                        <li><a href="../Datenschutz/datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="../Leistungen/leistungen.html">Unsere Leistungen</a></li>
+                        <li><a href="../Fuhrpark/fuhrpark.html">Fuhrpark</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>Telefon: <a href="tel:+49000000000">+49 (0) 00 00000-0</a></p>
+                    <p>E-Mail: <a href="mailto:info@kann-transport.de">info@kann-transport.de</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 KANN Transport GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-notice">
+        <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer <a href="../Datenschutz/datenschutz.html">Datenschutzerklärung</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="cookie-btn accept">Alle akzeptieren</button>
+            <button id="essential-cookies" class="cookie-btn essential">Nur essenzielle Cookies</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Cookie banner
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            // Here you would set cookies or local storage to remember the choice
+        });
+        
+        document.getElementById('essential-cookies').addEventListener('click', function() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            // Here you would set only essential cookies
+        });
+    </script>
+</body>
+</html>
